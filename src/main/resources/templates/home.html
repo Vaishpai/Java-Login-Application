@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to MyWebApp</h1>
+    <p th:if="${username}">Hello, <span th:text="${username}"></span>!</p>
+    <a href="/login">Login</a> | <a href="/register">Register</a>
+</body>
+</html>
